@@ -232,6 +232,16 @@ private:
 		return true;
 	}
 
+	struct QueueFamilyIndices {
+		uint32_t graphicsFamily;
+	};
+	
+	QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device) {
+		QueueFamilyIndices indices;
+		// Logic to find graphics queue family
+		return indices;
+	}
+
 	void mainLoop() {
 		while (!glfwWindowShouldClose(window)) {
 			glfwPollEvents();

@@ -8,6 +8,7 @@
 #include <cstdlib>
 #include <optional>
 
+
 const uint32_t WIDTH = 800;
 const uint32_t HEIGHT = 600;
 
@@ -44,7 +45,22 @@ struct QueueFamilyIndices {
     bool isComplete() {
         return graphicsFamily.has_value();
     }
-};
+}; 
+
+
+std::ostream& operator<<(std::ostream& os, const QueueFamilyIndices& indices) {
+    os << "QueueFamilyIndices { ";
+    if (indices.graphicsFamily.has_value()) {
+        os << "graphicsFamily: " << indices.graphicsFamily.value();
+    }
+    else {
+        os << "graphicsFamily: <none>";
+    }
+    os << " }";
+    return os;
+}
+
+
 
 class HelloTriangleApplication {
 public:
@@ -187,6 +203,8 @@ private:
     void createLogicalDevice() {
         QueueFamilyIndices indices = findQueueFamilies(physicalDevice);
 
+        std::cout << indices;
+
         VkDeviceQueueCreateInfo queueCreateInfo{};
         queueCreateInfo.sType = VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO;
         queueCreateInfo.queueFamilyIndex = indices.graphicsFamily.value();
@@ -230,7 +248,7 @@ private:
 
     QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device) {
         QueueFamilyIndices indices;
-
+        std::cout << indices << std::endl;
         uint32_t queueFamilyCount = 0;
         vkGetPhysicalDeviceQueueFamilyProperties(device, &queueFamilyCount, nullptr);
 

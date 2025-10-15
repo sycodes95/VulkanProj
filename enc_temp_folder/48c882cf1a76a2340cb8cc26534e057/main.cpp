@@ -46,6 +46,8 @@ struct QueueFamilyIndices {
     }
 };
 
+
+
 class HelloTriangleApplication {
 public:
     void run() {

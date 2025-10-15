@@ -1,21 +1,2 @@
 ﻿  main.cpp
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(269,21): error C3646: 'findQueueFamilies': unknown override specifier
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(269,38): error C2059: syntax error: '('
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(269,64): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(214,3): error C2065: 'QueueFamilyIndices': undeclared identifier
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(214,22): error C2146: syntax error: missing ';' before identifier 'indices'
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(214,22): error C2065: 'indices': undeclared identifier
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(214,32): error C3861: 'findQueueFamilies': identifier not found
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(217,38): error C2065: 'indices': undeclared identifier
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(233,28): error C2065: 'indices': undeclared identifier
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(233,3): error C2660: 'vkGetDeviceQueue': function does not take 3 arguments
-      C:\VulkanSDK\1.4.313.2\Include\vulkan\vulkan_core.h(4415,28):
-      see declaration of 'vkGetDeviceQueue'
-      C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(233,3):
-      while trying to match the argument list '(VkDevice, int, VkQueue *)'
-  
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(264,3): error C2065: 'QueueFamilyIndices': undeclared identifier
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(264,22): error C2146: syntax error: missing ';' before identifier 'indices'
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(264,22): error C2065: 'indices': undeclared identifier
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(264,32): error C3861: 'findQueueFamilies': identifier not found
-C:\Users\KevinKim\source\repos\VulkanProj\VulkanProj\main.cpp(266,10): error C2065: 'indices': undeclared identifier
+  VulkanProj.vcxproj -> C:\Users\KevinKim\source\repos\VulkanProj\x64\Debug\VulkanProj.exe
